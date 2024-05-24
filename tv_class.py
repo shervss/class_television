@@ -8,7 +8,11 @@ class TV:
     self.volumeLevel = 1
     self.on = False
     # Turn on the TV
+    def turn_on(self):
+        self.on = True
     # Turn off the TV
+    def turn_off(self):
+        self.on = False
     # Return the channel of the current TV
     # Set a new channel for the TV if the TV is on and the channel is within the range (1 to 120)
     # Return the current volume level of the TV

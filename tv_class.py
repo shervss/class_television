@@ -24,7 +24,13 @@ class TV:
     def get_volume(self):
         ruturn self.volumeLevel
     # Set a new volume level for the TV if the TV is on and the volume level is within the range (1 to 7)
+    def set_volume(self,volumeLevel):
+        if 1 <= volumeLevel <= 7:
+            self.volumeLevel = volumeLevel
     # Increase the channel number by 1 if the TV is on and the current channel is less than 120
+    def channel_up(self):
+        if self.on and self.channel < 120:
+            self.channel += 1
     # Decrease the channel number by 1 if the TV is on and the current channel is greater than 1
     # Increase the volume level by 1 if the TV is on and the current volume level is less than 7
     # Decrease the volume level by 1 if the TV is on and the current volume level is greater than 1

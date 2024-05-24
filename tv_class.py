@@ -32,5 +32,8 @@ class TV:
         if self.on and self.channel < 120:
             self.channel += 1
     # Decrease the channel number by 1 if the TV is on and the current channel is greater than 1
+    def channel_down(self):
+        if self.on and self.channel > 1:
+            self.channel -= 1
     # Increase the volume level by 1 if the TV is on and the current volume level is less than 7
     # Decrease the volume level by 1 if the TV is on and the current volume level is greater than 1

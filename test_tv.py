@@ -13,4 +13,6 @@ def main():
     tv1.set_channel(30)
     tv1.set_volume(3)
     # Set channels and volumes for tv2
+    tv2.set_channel(3)
+    tv2.set_volume(2)
     # Print the results
